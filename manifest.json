@@ -1,0 +1,73 @@
+{
+  "manifest_version": 3,
+  "name": "X Tube",
+  "version": "3.0.0",
+  "description": "Free AI toolkit for YouTube creators: smart titles & tags in Studio, tags viewer, keyword research, video audit and thumbnail review. Needs only a Google AI Studio key.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "X Tube",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+  "permissions": [
+    "storage",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "*://www.youtube.com/*",
+    "*://studio.youtube.com/*",
+    "https://generativelanguage.googleapis.com/*",
+    "https://suggestqueries.google.com/*",
+    "https://i.ytimg.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.youtube.com/*"
+      ],
+      "js": [
+        "page-bridge.js"
+      ],
+      "world": "MAIN",
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "*://www.youtube.com/*",
+        "*://studio.youtube.com/*"
+      ],
+      "js": [
+        "shared.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "open-sidebar": {
+      "suggested_key": {
+        "default": "Alt+Shift+T"
+      },
+      "description": "Open the X Tube side panel"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "minimum_chrome_version": "114"
+}
