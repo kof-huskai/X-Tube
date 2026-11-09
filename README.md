@@ -1,7 +1,7 @@
 <p align="center"><img src="docs/logo.png" width="120" alt="X Tube"></p>
 
 <h1 align="center">X Tube</h1>
-<p align="center">Free AI toolkit for YouTube creators — a TubeBuddy-style Chrome extension that needs only a Google AI Studio key.<br>
+<p align="center">Free AI toolkit for YouTube creators — a Chrome extension that needs only a Google AI Studio key.<br>
 افزونهٔ رایگان کروم برای یوتیوبرها؛ فقط به کلید Google AI Studio نیاز دارد.</p>
 
 ## Features | امکانات
