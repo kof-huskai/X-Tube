@@ -24,4 +24,4 @@ No servers, no tracking. See [PRIVACY.md](PRIVACY.md).
 See [CONTRIBUTING.md](CONTRIBUTING.md). Licensed under [MIT](LICENSE).
 
 ## Links
-GitHub: [kof-huskai](https://github.com/kof-huskai) · Telegram: [drunkducks](https://t.me/drunkducks)
+GitHub: [kof-huskai/X-Tube](https://github.com/kof-huskai/X-Tube) · Telegram: [drunkducks](https://t.me/drunkducks)

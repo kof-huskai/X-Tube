@@ -12,4 +12,4 @@ X Tube is a browser extension that runs locally in your browser.
 
 You can remove all stored data at any time by using **Reset** in Settings or uninstalling the extension.
 
-Contact: https://github.com/kof-huskai
+Contact: https://github.com/kof-huskai/X-Tube/issues

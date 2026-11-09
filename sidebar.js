@@ -309,7 +309,7 @@
   function aboutFooter() {
     const version = chrome.runtime.getManifest().version.replace(/\.0$/, "");
     return h("div", { class: "tm-foot" }, h("span", null, "Version ", version),
-      h("div", { class: "tm-row", style: "gap:4px" }, brandLink("github", "GitHub · kof-huskai", "https://github.com/kof-huskai"), brandLink("telegram", "Telegram · drunkducks", "https://t.me/drunkducks")));
+      h("div", { class: "tm-row", style: "gap:4px" }, brandLink("github", "GitHub · X-Tube", "https://github.com/kof-huskai/X-Tube"), brandLink("telegram", "Telegram · drunkducks", "https://t.me/drunkducks")));
   }
 
   /* ---------- header & view switching ---------- */
